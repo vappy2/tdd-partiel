@@ -24,6 +24,10 @@ class Exercises
 
         $result = '';
 
+        if($n > 3000){
+            return 'Nombre trop grand, choissisez un nombre inférieur à 3000 mais supérieur à 0';
+        }
+
         while($n > 0){
             foreach ($romanNumber as $roman => $rnb)
             {
@@ -58,7 +62,7 @@ class Exercises
         ];
 
         $result = '';
-        
+
         if($romanNb == "I"){
             return 1;
         }
