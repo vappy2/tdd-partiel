@@ -31,4 +31,8 @@ final class ExercisesTest extends TestCase
         $this->assertEquals(Exercises::romanToDecimal("IV"), 4);
     }
 
+    public function testThreeBis(){
+        $this->assertEquals(Exercises::romanToDecimal("LIV"),54);
+    }
+
 }
