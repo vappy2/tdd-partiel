@@ -14,4 +14,9 @@ final class ExercisesTest extends TestCase
         $this->assertEquals(Exercises::decimalToRoman(2), "II");
     }
 
+    public function testThree()
+    {
+        $this->assertEquals(Exercises::decimalToRoman(4), "IV");
+    }
+
 }
