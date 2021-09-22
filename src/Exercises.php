@@ -7,30 +7,30 @@ class Exercises
     public static function decimalToRoman(int $n) : string
     {
         $romanNumber = array(
-            1 => 'I',
-            4 => 'IV',
-            5 => 'V',
-            9 => 'IX',
-            10 => 'X',
-            40 => 'XL',
-            50 => 'X',
-            90 => 'XC',
-            100 => 'C',
-            400 => 'CD',
-            500 => 'D',
-            900 => 'CM',
-            1000 => 'M'
+            'I' => 1,
+            'IV' => 4,
+            'V' => 5,
+            'IX' => 9,
+            'X' => 10,
+            'XL' => 40,
+            'X' => 50,
+            'XC' => 90,
+            'C' => 100,
+            'CD' => 400,
+            'D' => 500,
+            'CM' => 900,
+            'M' => 1000
         );
 
         $result = '';
 
         while($n > 0){
-            foreach ($romanNumber as $rnb)
+            foreach ($romanNumber as $roman => $rnb)
             {
-                if( $n >= $rnb)
+                if($n >= $rnb)
                 {
                     $n -= $rnb;
-                    $result .= $rnb;
+                    $result .= $roman;
                     break;
                 }
             }
@@ -38,4 +38,5 @@ class Exercises
         
         return $result;
     }
+
 }
