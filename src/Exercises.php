@@ -6,7 +6,7 @@ class Exercises
 {
     public static function decimalToRoman(int $n) : string
     {
-        $romanNumber = [
+        $romanNumber = array(
             1 => 'I',
             4 => 'IV',
             5 => 'V',
@@ -20,20 +20,22 @@ class Exercises
             500 => 'D',
             900 => 'CM',
             1000 => 'M'
-        ];
+        );
 
         $result = '';
 
-        if($n == 1){
-            return "I";
+        while($n > 0){
+            foreach ($romanNumber as $rnb)
+            {
+                if( $n >= $rnb)
+                {
+                    $n -= $rnb;
+                    $result .= $rnb;
+                    break;
+                }
+            }
         }
-
-        if($n == 2){
-            return "II";
-        }
-
-        if($n == 4){
-            return "IV";
-        }
+        
+        return $result;
     }
 }

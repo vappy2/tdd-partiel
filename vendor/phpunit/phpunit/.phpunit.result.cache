@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ExercisesTest::testOne":3},"times":{"ExercisesTest::testOne":0.012,"ExercisesTest::testTwo":0,"ExercisesTest::testThree":0}}
+{"version":1,"defects":{"ExercisesTest::testOne":4,"ExercisesTest::testThree":4},"times":{"ExercisesTest::testOne":0.003,"ExercisesTest::testTwo":0,"ExercisesTest::testThree":0}}
