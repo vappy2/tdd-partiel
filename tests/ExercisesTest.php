@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 final class ExercisesTest extends TestCase
 {
-    public function testZero(){
+    /*public function testZero(){
         $this->assertEquals(Exercises::decimalToRoman(0),'');
     }
     public function testOne()
@@ -20,6 +20,15 @@ final class ExercisesTest extends TestCase
     public function testThree()
     {
         $this->assertEquals(Exercises::decimalToRoman(4), "IV");
+    }*/
+
+    public function testOneBis(){
+        $this->assertEquals(Exercises::romanToDecimal("I"), 1);
+    }
+
+    public function testTwoBis()
+    {
+        $this->assertEquals(Exercises::romanToDecimal("IV"), 4);
     }
 
 }

@@ -39,4 +39,15 @@ class Exercises
         return $result;
     }
 
+    public static function romanToDecimal(string $romanNb) : int 
+    {
+        if($romanNb == "I"){
+            return 1;
+        }
+
+        if($romanNb == "IV"){
+            return 4;
+        }
+    }
+
 }
