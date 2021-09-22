@@ -4,28 +4,11 @@ use Exercises as GlobalExercises;
 
 class Exercises
 {
-    public static function isPrimeNumber(int $number)
+    public static function decimalToRoman(int $n) : string
     {
-        for ($i = 2; $i < $number; $i++){
-            if($number % $i == 0){
-               return false;
-            }else{
-                return true;
-            }
+
+        if($n == 1){
+            return "I";
         }
-    }
-
-    public static function isPrimeFactor($number){
-
-        $primes= [];
-
-        for($i = 2; $i <= $number; $i++){
-            while ($number % $i == 0){
-                $primes[] = $i;
-                $number /= $i;
-            }
-        }
-        
-        return $primes;
     }
 }
