@@ -61,15 +61,17 @@ class Exercises
             'I' => 1
         ];
 
-        $result = '';
+        $result = 0;
 
-        if($romanNb == "I"){
-            return 1;
+        foreach ($romanNumber as $roman => $value)
+        {
+            while(strpos($romanNb, $roman) === 0){
+                $result += $value;
+                $romanNb = substr($romanNb, strlen($roman));
+            }
         }
 
-        if($romanNb == "IV"){
-            return 4;
-        }
+        return $result;
     }
 
 }
