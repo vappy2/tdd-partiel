@@ -4,15 +4,18 @@ use PHPUnit\Framework\TestCase;
 
 final class ExercisesTest extends TestCase
 {
+    public function testZero(){
+        $this->assertEquals(Exercises::decimalToRoman(0),'');
+    }
     public function testOne()
     {
         $this->assertEquals(Exercises::decimalToRoman(1), "I");
     }
 
-    /*public function testTwo()
+    public function testTwo()
     {
         $this->assertEquals(Exercises::decimalToRoman(2), "II");
-    }*/
+    }
 
     public function testThree()
     {

@@ -7,19 +7,19 @@ class Exercises
     public static function decimalToRoman(int $n) : string
     {
         $romanNumber = array(
-            'I' => 1,
-            'IV' => 4,
-            'V' => 5,
-            'IX' => 9,
-            'X' => 10,
-            'XL' => 40,
-            'X' => 50,
-            'XC' => 90,
-            'C' => 100,
-            'CD' => 400,
-            'D' => 500,
+            'M' => 1000,
             'CM' => 900,
-            'M' => 1000
+            'D' => 500,
+            'CD' => 400,
+            'C' => 100,
+            'XC' => 90,
+            'X' => 50,
+            'XL' => 40,
+            'X' => 10,
+            'IX' => 9,
+            'V' => 5,
+            'IV' => 4,
+            'I' => 1
         );
 
         $result = '';
